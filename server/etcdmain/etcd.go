@@ -472,7 +472,8 @@ func checkSupportArch() {
 	if runtime.GOARCH == "amd64" ||
 		runtime.GOARCH == "arm64" ||
 		runtime.GOARCH == "ppc64le" ||
-		runtime.GOARCH == "s390x" {
+		runtime.GOARCH == "s390x" ||
+		runtime.GOARCH == "loong64" {
 		return
 	}
 	// unsupported arch only configured via environment variable
